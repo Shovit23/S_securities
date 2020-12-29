@@ -1,0 +1,82 @@
+{% extends 'base.html' %} {% block title %} Contacts {% endblock title %} {% block body %}
+
+
+<div class="bg-image"></div>
+
+<div class="bg-text">
+    <h1><em>WebSite Pentesting</em></h1>
+    <p>Web application security is a branch of information security that deals specifically with security of websites, web applications and web services. At a high level, web application security draws on the principles of application security but applies
+        them specifically to internet and web systems</p>
+    <a href="/web_p.html"><button type="button" style="background-color: whitesmoke;"class="btn btn-sm btn-outline-secondary px-5">Click here to know more</button></a>
+</div>
+
+<div class="container">
+
+    <h1><em>Network Pentesting</em></h1>
+    <p>Network Pentesting is the discovery of hosts or devices on a network. Network Pentesting tends to use overt discovery protocols such as ICMP and SNMP to gather information. It may also scan various ports on remote hosts for looking for well known
+        services in an attempt to further identify the function of a remote host. The next stage of peneration is to fingerprint the operating system of the remote host</p>
+        <a href="security_s/net_p.html"><button type="button" style="background-color: whitesmoke;"class="btn btn-sm btn-outline-secondary px-5">Click here to know more</button></a>
+</div>
+
+<style>
+    body,
+    html {
+        height: 100%;
+    }
+    
+    * {
+        box-sizing: border-box;
+    }
+    
+    .bg-image {
+        /* The image used */
+        background-image: url("/static/img/web.png");
+        /* Add the blur effect */
+        filter: blur(8px);
+        -webkit-filter: blur(8px);
+        /* Full height */
+        height: 100%;
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    /* Position text in the middle of the page/image */
+    
+    .bg-text {
+        background-color: rgb(0, 0, 0);
+        /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.4);
+        /* Black w/opacity/see-through */
+        color: white;
+        font-weight: bold;
+        border: 3px solid #f1f1f1;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        width: 80%;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .container {
+        background-color: rgb(0, 0, 0);
+        /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.4);
+        /* Black w/opacity/see-through */
+        color: white;
+        font-weight: bold;
+        border: 3px solid #f1f1f1;
+        position: absolute;
+        top: 500px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        width: 80%;
+        padding: 20px;
+        text-align: center;
+    }
+</style>
+{% endblock body %}
